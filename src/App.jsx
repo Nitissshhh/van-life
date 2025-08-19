@@ -2,8 +2,8 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import "./server"
-import Home from "./pages/Home"
-import About from "./pages/About"
+import Home from "./pages/home"
+import About from "./pages/about"
 import Vans from "./pages/Vans/Vans"
 import VanDetail from "./pages/Vans/VansDetail"
 import Dashboard from "./pages/Host/Dashboard"
