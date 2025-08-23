@@ -53,3 +53,15 @@ export async function getHostVans() {
     return vans
 }
 
+export async function loginUser({ email, password }) {
+    // Mock login logic (replace with real auth as needed)
+    if (
+        (email === "b@b.com" && password === "p123") ||
+        (email === "n@tish.com" && password === "123")
+    ) {
+        localStorage.setItem("loggedin", true)
+        return { user: { email } }
+    }
+    throw new Error("Invalid credentials")
+}
+
